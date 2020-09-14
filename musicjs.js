@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
                         }
                         if (index == 19) {
                             index = 0;
-                            break;
+                            return;
                         } else stateChange();
                     })
                     //}
