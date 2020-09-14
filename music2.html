@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>beatboxing-mashup web app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="musiccss.css">
+    </link>
+    <script src="musicjs.js"></script>
+    <script>
+        function colorchange(id) {
+
+            var background = document.getElementById(id).style.backgroundColor;
+
+            if (background == "rgb(0, 0, 0)") {
+                document.getElementById(id).style.backgroundColor = "rgb(26,255,0)";
+            }
+            if (background == "rgb(26, 255, 0)") {
+                document.getElementById(id).style.backgroundColor = "rgb(0, 0, 0)";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1 style="text-align: center;color: white;"> ARE YOU READY BEAT BOXER!</h1>
+            <p style="text-align: center;color: white;">Make your own combination of beats, how? here's a brief description of how the mixer works:</p>
+            <hr/>
+            <div style="text-align: center;color: white;">
+                <p>There are 5 rows each representing a different beat a future BEATBOXER can practice his heart out at.</p>
+                <p>Next are 9 piano notes to go with your beats, because YOU CHOOSE YOUR MUSIC, IF MUSIC HAS CHOSEN YOU.</p>
+                <p>You can make your own 20 second track to practice, preplanning every second of your track!</p>
+                <p>Once you are sure your mashup expresses every strand of you through your music, you can press play to run the track you created in a loop and practice your beats to perfection.</p>
+                <p>The app enables you to choose the combination of piano notes and beats you can create through your mouth for every second of a 20 second performance by merely clicking on the block corresponding to the row of the beat or note you want
+                    to play and column of the time at which in your performance you will play this combo.</p>
+                <p>Once you choose a beat or tune, your chosen block becomes green indicating you're good to go, this box can be deselected by clicking again in case you are not satisfied with the effect the track is creating.</p>
+                <p>A single row correspons to a single sound enabling you to plan every second to perfection.</p>
+            </div>
+            <hr/>
+        </header>
+        <button class="yourtrack">(pause)I>/II(play)</button>
+        <br> <br>
+        <table>
+            <tr class="i1">
+                <th class="types">Beat1</th>
+                <div class="icons">
+                    <th id="b1" onclick="colorchange('b1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>1</th>
+                    <th id="b2" onclick="colorchange('b2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>2</th>
+                    <th id="b3" onclick="colorchange('b3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>3</th>
+                    <th id="b4" onclick="colorchange('b4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>4</th>
+                    <th id="b5" onclick="colorchange('b5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>5</th>
+                    <th id="b6" onclick="colorchange('b6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>6</th>
+                    <th id="b7" onclick="colorchange('b7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>7</th>
+                    <th id="b8" onclick="colorchange('b8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>8</th>
+                    <th id="b9" onclick="colorchange('b9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>9</th>
+                    <th id="b10" onclick="colorchange('b10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>10</th>
+                    <th id="b11" onclick="colorchange('b11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>11</th>
+                    <th id="b12" onclick="colorchange('b12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>12</th>
+                    <th id="b13" onclick="colorchange('b13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>13</th>
+                    <th id="b14" onclick="colorchange('b14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>14</th>
+                    <th id="b15" onclick="colorchange('b15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>15</th>
+                    <th id="b16" onclick="colorchange('b16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>16</th>
+                    <th id="b17" onclick="colorchange('b17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>17</th>
+                    <th id="b18" onclick="colorchange('b18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>18</th>
+                    <th id="b19" onclick="colorchange('b19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>19</th>
+                    <th id="b20" onclick="colorchange('b20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat1.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i2">
+                <th class="types">Beat2</th>
+                <div class="icons">
+                    <th id="a1" onclick="colorchange('a1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>1</th>
+                    <th id="a2" onclick="colorchange('a2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>2</th>
+                    <th id="a3" onclick="colorchange('a3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>3</th>
+                    <th id="a4" onclick="colorchange('a4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>4</th>
+                    <th id="a5" onclick="colorchange('a5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>5</th>
+                    <th id="a6" onclick="colorchange('a6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>6</th>
+                    <th id="a7" onclick="colorchange('a7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>7</th>
+                    <th id="a8" onclick="colorchange('a8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>8</th>
+                    <th id="a9" onclick="colorchange('a9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>9</th>
+                    <th id="a10" onclick="colorchange('a10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>10</th>
+                    <th id="a11" onclick="colorchange('a11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>11</th>
+                    <th id="a12" onclick="colorchange('a12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>12</th>
+                    <th id="a13" onclick="colorchange('a13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>13</th>
+                    <th id="a14" onclick="colorchange('a14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>14</th>
+                    <th id="a15" onclick="colorchange('a15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>15</th>
+                    <th id="a16" onclick="colorchange('a16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>16</th>
+                    <th id="a17" onclick="colorchange('a17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>17</th>
+                    <th id="a18" onclick="colorchange('a18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>18</th>
+                    <th id="a19" onclick="colorchange('a19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>19</th>
+                    <th id="a20" onclick="colorchange('a20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat2.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i3">
+                <th class="types">Beat3</th>
+                <div class="icons">
+                    <th id="c1" onclick="colorchange('c1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>1</th>
+                    <th id="c2" onclick="colorchange('c2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>2</th>
+                    <th id="c3" onclick="colorchange('c3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>3</th>
+                    <th id="c4" onclick="colorchange('c4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>4</th>
+                    <th id="c5" onclick="colorchange('c5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>5</th>
+                    <th id="c6" onclick="colorchange('c6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>6</th>
+                    <th id="c7" onclick="colorchange('c7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>7</th>
+                    <th id="c8" onclick="colorchange('c8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>8</th>
+                    <th id="c9" onclick="colorchange('c9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>9</th>
+                    <th id="c10" onclick="colorchange('c10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>10</th>
+                    <th id="c11" onclick="colorchange('c11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>11</th>
+                    <th id="c12" onclick="colorchange('c12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>12</th>
+                    <th id="c13" onclick="colorchange('c13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>13</th>
+                    <th id="c14" onclick="colorchange('c14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>14</th>
+                    <th id="c15" onclick="colorchange('c15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>15</th>
+                    <th id="c16" onclick="colorchange('c16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>16</th>
+                    <th id="c17" onclick="colorchange('c17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>17</th>
+                    <th id="c18" onclick="colorchange('c18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>18</th>
+                    <th id="c19" onclick="colorchange('c19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>19</th>
+                    <th id="c20" onclick="colorchange('c20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat3.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i4">
+                <th class="types">Beat4</th>
+                <div class="icons">
+                    <th id="d1" onclick="colorchange('d1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>1</th>
+                    <th id="d2" onclick="colorchange('d2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>2</th>
+                    <th id="d3" onclick="colorchange('d3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>3</th>
+                    <th id="d4" onclick="colorchange('d4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>4</th>
+                    <th id="d5" onclick="colorchange('d5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>5</th>
+                    <th id="d6" onclick="colorchange('d6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>6</th>
+                    <th id="d7" onclick="colorchange('d7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>7</th>
+                    <th id="d8" onclick="colorchange('d8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>8</th>
+                    <th id="d9" onclick="colorchange('d9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>9</th>
+                    <th id="d10" onclick="colorchange('d10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>10</th>
+                    <th id="d11" onclick="colorchange('d11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>11</th>
+                    <th id="d12" onclick="colorchange('d12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>12</th>
+                    <th id="d13" onclick="colorchange('d13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>13</th>
+                    <th id="d14" onclick="colorchange('d14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>14</th>
+                    <th id="d15" onclick="colorchange('d15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>15</th>
+                    <th id="d16" onclick="colorchange('d16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>16</th>
+                    <th id="d17" onclick="colorchange('d17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>17</th>
+                    <th id="d18" onclick="colorchange('d18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>18</th>
+                    <th id="d19" onclick="colorchange('d19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>19</th>
+                    <th id="d20" onclick="colorchange('d20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat4.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i5">
+                <th class="types">Beat5</th>
+                <div class="icons">
+                    <th id="e1" onclick="colorchange('e1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>1</th>
+                    <th id="e2" onclick="colorchange('e2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>2</th>
+                    <th id="e3" onclick="colorchange('e3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>3</th>
+                    <th id="e4" onclick="colorchange('e4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>4</th>
+                    <th id="e5" onclick="colorchange('e5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>5</th>
+                    <th id="e6" onclick="colorchange('e6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>6</th>
+                    <th id="e7" onclick="colorchange('e7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>7</th>
+                    <th id="e8" onclick="colorchange('e8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>8</th>
+                    <th id="e9" onclick="colorchange('e9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>9</th>
+                    <th id="e10" onclick="colorchange('e10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>10</th>
+                    <th id="e11" onclick="colorchange('e11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>11</th>
+                    <th id="e12" onclick="colorchange('e12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>12</th>
+                    <th id="e13" onclick="colorchange('e13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>13</th>
+                    <th id="e14" onclick="colorchange('e14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>14</th>
+                    <th id="e15" onclick="colorchange('e15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>15</th>
+                    <th id="e16" onclick="colorchange('e16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>16</th>
+                    <th id="e17" onclick="colorchange('e17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>17</th>
+                    <th id="e18" onclick="colorchange('e18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>18</th>
+                    <th id="e19" onclick="colorchange('e19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>19</th>
+                    <th id="e20" onclick="colorchange('e20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="beat5.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+
+            <tr class="i1">
+                <th class="types">Tune1</th>
+                <div class="icons">
+                    <th id="f1" onclick="colorchange('f1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>1</th>
+                    <th id="f2" onclick="colorchange('f2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>2</th>
+                    <th id="f3" onclick="colorchange('f3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>3</th>
+                    <th id="f4" onclick="colorchange('f4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>4</th>
+                    <th id="f5" onclick="colorchange('f5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>5</th>
+                    <th id="f6" onclick="colorchange('f6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>6</th>
+                    <th id="f7" onclick="colorchange('f7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>7</th>
+                    <th id="f8" onclick="colorchange('f8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>8</th>
+                    <th id="f9" onclick="colorchange('f9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>9</th>
+                    <th id="f10" onclick="colorchange('f10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>10</th>
+                    <th id="f11" onclick="colorchange('f11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>11</th>
+                    <th id="f12" onclick="colorchange('f12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>12</th>
+                    <th id="f13" onclick="colorchange('f13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>13</th>
+                    <th id="f14" onclick="colorchange('f14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>14</th>
+                    <th id="f15" onclick="colorchange('f15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>15</th>
+                    <th id="f16" onclick="colorchange('f16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>16</th>
+                    <th id="f17" onclick="colorchange('f17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>17</th>
+                    <th id="f18" onclick="colorchange('f18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>18</th>
+                    <th id="f19" onclick="colorchange('f19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>19</th>
+                    <th id="f20" onclick="colorchange('f20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune1.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i2">
+                <th class="types">Tune2</th>
+                <div class="icons">
+                    <th id="g1" onclick="colorchange('g1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>1</th>
+                    <th id="g2" onclick="colorchange('g2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>2</th>
+                    <th id="g3" onclick="colorchange('g3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>3</th>
+                    <th id="g4" onclick="colorchange('g4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>4</th>
+                    <th id="g5" onclick="colorchange('g5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>5</th>
+                    <th id="g6" onclick="colorchange('g6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>6</th>
+                    <th id="g7" onclick="colorchange('g7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>7</th>
+                    <th id="g8" onclick="colorchange('g8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>8</th>
+                    <th id="g9" onclick="colorchange('g9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>9</th>
+                    <th id="g10" onclick="colorchange('g10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>10</th>
+                    <th id="g11" onclick="colorchange('g11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>11</th>
+                    <th id="g12" onclick="colorchange('g12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>12</th>
+                    <th id="g13" onclick="colorchange('g13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>13</th>
+                    <th id="g14" onclick="colorchange('g14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>14</th>
+                    <th id="g15" onclick="colorchange('g15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>15</th>
+                    <th id="g16" onclick="colorchange('g16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>16</th>
+                    <th id="g17" onclick="colorchange('g17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>17</th>
+                    <th id="g18" onclick="colorchange('g18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>18</th>
+                    <th id="g19" onclick="colorchange('g19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>19</th>
+                    <th id="g20" onclick="colorchange('g20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune2.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i3">
+                <th class="types">Tune3</th>
+                <div class="icons">
+                    <th id="h1" onclick="colorchange('h1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>1</th>
+                    <th id="h2" onclick="colorchange('h2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>2</th>
+                    <th id="h3" onclick="colorchange('h3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>3</th>
+                    <th id="h4" onclick="colorchange('h4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>4</th>
+                    <th id="h5" onclick="colorchange('h5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>5</th>
+                    <th id="h6" onclick="colorchange('h6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>6</th>
+                    <th id="h7" onclick="colorchange('h7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>7</th>
+                    <th id="h8" onclick="colorchange('h8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>8</th>
+                    <th id="h9" onclick="colorchange('h9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>9</th>
+                    <th id="h10" onclick="colorchange('h10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>10</th>
+                    <th id="h11" onclick="colorchange('h11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>11</th>
+                    <th id="h12" onclick="colorchange('h12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>12</th>
+                    <th id="h13" onclick="colorchange('h13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>13</th>
+                    <th id="h14" onclick="colorchange('h14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>14</th>
+                    <th id="h15" onclick="colorchange('h15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>15</th>
+                    <th id="h16" onclick="colorchange('h16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>16</th>
+                    <th id="h17" onclick="colorchange('h17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>17</th>
+                    <th id="h18" onclick="colorchange('h18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>18</th>
+                    <th id="h19" onclick="colorchange('h19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>19</th>
+                    <th id="h20" onclick="colorchange('h20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune3.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i4">
+                <th class="types">Tune4</th>
+                <div class="icons">
+                    <th id="q1" onclick="colorchange('q1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>1</th>
+                    <th id="q2" onclick="colorchange('q2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>2</th>
+                    <th id="q3" onclick="colorchange('q3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>3</th>
+                    <th id="q4" onclick="colorchange('q4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>4</th>
+                    <th id="q5" onclick="colorchange('q5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>5</th>
+                    <th id="q6" onclick="colorchange('q6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>6</th>
+                    <th id="q7" onclick="colorchange('q7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>7</th>
+                    <th id="q8" onclick="colorchange('q8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>8</th>
+                    <th id="q9" onclick="colorchange('q9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>9</th>
+                    <th id="q10" onclick="colorchange('q10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>10</th>
+                    <th id="q11" onclick="colorchange('q11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>11</th>
+                    <th id="q12" onclick="colorchange('q12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>12</th>
+                    <th id="q13" onclick="colorchange('q13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>13</th>
+                    <th id="q14" onclick="colorchange('q14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>14</th>
+                    <th id="q15" onclick="colorchange('q15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>15</th>
+                    <th id="q16" onclick="colorchange('q16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>16</th>
+                    <th id="q17" onclick="colorchange('q17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>17</th>
+                    <th id="q18" onclick="colorchange('q18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>18</th>
+                    <th id="q19" onclick="colorchange('q19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>19</th>
+                    <th id="q20" onclick="colorchange('q20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune4.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i5">
+                <th class="types">Tune5</th>
+                <div class="icons">
+                    <th id="s1" onclick="colorchange('s1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>1</th>
+                    <th id="s2" onclick="colorchange('s2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>2</th>
+                    <th id="s3" onclick="colorchange('s3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>3</th>
+                    <th id="s4" onclick="colorchange('s4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>4</th>
+                    <th id="s5" onclick="colorchange('s5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>5</th>
+                    <th id="s6" onclick="colorchange('s6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>6</th>
+                    <th id="s7" onclick="colorchange('s7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>7</th>
+                    <th id="s8" onclick="colorchange('s8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>8</th>
+                    <th id="s9" onclick="colorchange('s9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>9</th>
+                    <th id="s10" onclick="colorchange('s10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>10</th>
+                    <th id="s11" onclick="colorchange('s11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>11</th>
+                    <th id="s12" onclick="colorchange('s12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>12</th>
+                    <th id="s13" onclick="colorchange('s13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>13</th>
+                    <th id="s14" onclick="colorchange('s14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>14</th>
+                    <th id="s15" onclick="colorchange('s15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>15</th>
+                    <th id="s16" onclick="colorchange('s16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>16</th>
+                    <th id="s17" onclick="colorchange('s17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>17</th>
+                    <th id="s18" onclick="colorchange('s18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>18</th>
+                    <th id="s19" onclick="colorchange('s19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>19</th>
+                    <th id="s20" onclick="colorchange('s20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune5.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i6">
+                <th class="types">Tune6</th>
+                <div class="icons">
+                    <th id="r1" onclick="colorchange('r1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>1</th>
+                    <th id="r2" onclick="colorchange('r2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>2</th>
+                    <th id="r3" onclick="colorchange('r3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>3</th>
+                    <th id="r4" onclick="colorchange('r4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>4</th>
+                    <th id="r5" onclick="colorchange('r5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>5</th>
+                    <th id="r6" onclick="colorchange('r6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>6</th>
+                    <th id="r7" onclick="colorchange('r7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>7</th>
+                    <th id="r8" onclick="colorchange('r8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>8</th>
+                    <th id="r9" onclick="colorchange('r9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>9</th>
+                    <th id="r10" onclick="colorchange('r10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>10</th>
+                    <th id="r11" onclick="colorchange('r11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>11</th>
+                    <th id="r12" onclick="colorchange('r12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>12</th>
+                    <th id="r13" onclick="colorchange('r13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>13</th>
+                    <th id="r14" onclick="colorchange('r14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>14</th>
+                    <th id="r15" onclick="colorchange('r15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>15</th>
+                    <th id="r16" onclick="colorchange('r16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>16</th>
+                    <th id="r17" onclick="colorchange('r17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>17</th>
+                    <th id="r18" onclick="colorchange('r18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>18</th>
+                    <th id="r19" onclick="colorchange('r19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>19</th>
+                    <th id="r20" onclick="colorchange('r20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune6.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i7">
+                <th class="types">Tune7</th>
+                <div class="icons">
+                    <th id="t1" onclick="colorchange('t1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>1</th>
+                    <th id="t2" onclick="colorchange('t2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>2</th>
+                    <th id="t3" onclick="colorchange('t3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>3</th>
+                    <th id="t4" onclick="colorchange('t4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>4</th>
+                    <th id="t5" onclick="colorchange('t5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>5</th>
+                    <th id="t6" onclick="colorchange('t6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>6</th>
+                    <th id="t7" onclick="colorchange('t7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>7</th>
+                    <th id="t8" onclick="colorchange('t8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>8</th>
+                    <th id="t9" onclick="colorchange('t9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>9</th>
+                    <th id="t10" onclick="colorchange('t10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>10</th>
+                    <th id="t11" onclick="colorchange('t11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>11</th>
+                    <th id="t12" onclick="colorchange('t12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>12</th>
+                    <th id="t13" onclick="colorchange('t13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>13</th>
+                    <th id="t14" onclick="colorchange('t14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>14</th>
+                    <th id="t15" onclick="colorchange('t15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>15</th>
+                    <th id="t16" onclick="colorchange('t16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>16</th>
+                    <th id="t17" onclick="colorchange('t17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>17</th>
+                    <th id="t18" onclick="colorchange('t18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>18</th>
+                    <th id="t19" onclick="colorchange('t19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>19</th>
+                    <th id="t20" onclick="colorchange('t20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune7.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i8">
+                <th class="types">Tune8</th>
+                <div class="icons">
+                    <th id="n1" onclick="colorchange('n1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>1</th>
+                    <th id="n2" onclick="colorchange('n2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>2</th>
+                    <th id="n3" onclick="colorchange('n3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>3</th>
+                    <th id="n4" onclick="colorchange('n4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>4</th>
+                    <th id="n5" onclick="colorchange('n5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>5</th>
+                    <th id="n6" onclick="colorchange('n6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>6</th>
+                    <th id="n7" onclick="colorchange('n7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>7</th>
+                    <th id="n8" onclick="colorchange('n8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>8</th>
+                    <th id="n9" onclick="colorchange('n9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>9</th>
+                    <th id="n10" onclick="colorchange('n10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>10</th>
+                    <th id="n11" onclick="colorchange('n11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>11</th>
+                    <th id="n12" onclick="colorchange('n12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>12</th>
+                    <th id="n13" onclick="colorchange('n13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>13</th>
+                    <th id="n14" onclick="colorchange('n14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>14</th>
+                    <th id="n15" onclick="colorchange('n15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>15</th>
+                    <th id="n16" onclick="colorchange('n16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>16</th>
+                    <th id="n17" onclick="colorchange('n17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>17</th>
+                    <th id="n18" onclick="colorchange('n18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>18</th>
+                    <th id="n19" onclick="colorchange('n19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>19</th>
+                    <th id="n20" onclick="colorchange('n20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune8.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i9">
+                <th class="types">Tune9</th>
+                <div class="icons">
+                    <th id="m1" onclick="colorchange('m1');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>1</th>
+                    <th id="m2" onclick="colorchange('m2');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>2</th>
+                    <th id="m3" onclick="colorchange('m3');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>3</th>
+                    <th id="m4" onclick="colorchange('m4');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>4</th>
+                    <th id="m5" onclick="colorchange('m5');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>5</th>
+                    <th id="m6" onclick="colorchange('m6');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>6</th>
+                    <th id="m7" onclick="colorchange('m7');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>7</th>
+                    <th id="m8" onclick="colorchange('m8');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>8</th>
+                    <th id="m9" onclick="colorchange('m9');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>9</th>
+                    <th id="m10" onclick="colorchange('m10');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>10</th>
+                    <th id="m11" onclick="colorchange('m11');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>11</th>
+                    <th id="m12" onclick="colorchange('m12');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>12</th>
+                    <th id="m13" onclick="colorchange('m13');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>13</th>
+                    <th id="m14" onclick="colorchange('m14');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>14</th>
+                    <th id="m15" onclick="colorchange('m15');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>15</th>
+                    <th id="m16" onclick="colorchange('m16');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>16</th>
+                    <th id="m17" onclick="colorchange('m17');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>17</th>
+                    <th id="m18" onclick="colorchange('m18');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>18</th>
+                    <th id="m19" onclick="colorchange('m19');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>19</th>
+                    <th id="m20" onclick="colorchange('m20');" style="background:rgb(0, 0, 0);">
+                        <div class="grab"><audio class='sound' src="tune9.m4a"></audio></div>20</th>
+                </div>
+            </tr>
+            <tr class="i9">
+                <th class="types">Time</th>
+                <th>sec1</th>
+                <th>sec2</th>
+                <th>sec3</th>
+                <th>sec4</th>
+                <th>sec5</th>
+                <th>sec6</th>
+                <th>sec7</th>
+                <th>sec8</th>
+                <th>sec9</th>
+                <th>sec10</th>
+                <th>sec11</th>
+                <th>sec12</th>
+                <th>sec13</th>
+                <th>sec14</th>
+                <th>sec15</th>
+                <th>sec16</th>
+                <th>sec17</th>
+                <th>sec18</th>
+                <th>sec19</th>
+                <th>sec20</th>
+            </tr>
+        </table>
+    </div>
+    <div class="last"></div>
+</body>
+
+</html>
